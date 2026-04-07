@@ -9,4 +9,5 @@ print("This will raise an exception!")
 print("Testing the hidden create_earth: ", end="")
 
 # Intentional runtime failure for the exercise demonstration.
-print(f"{alchemy.create_earth()}")
+create_earth = getattr(alchemy, "create_earth")
+print(f"{create_earth()}")
