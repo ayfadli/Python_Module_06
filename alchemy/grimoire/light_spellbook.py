@@ -3,7 +3,6 @@ def light_spell_allowed_ingredients() -> list[str]:
 
 
 def light_spell_record(spell_name: str, ingredients: str) -> str:
-    # LATE IMPORT: This breaks the circular dependency loop!
     from .light_validator import validate_ingredients
 
     validation = validate_ingredients(ingredients)

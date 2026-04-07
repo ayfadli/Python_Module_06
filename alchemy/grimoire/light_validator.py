@@ -1,4 +1,3 @@
-# Standard top-level import
 from .light_spellbook import light_spell_allowed_ingredients
 
 
